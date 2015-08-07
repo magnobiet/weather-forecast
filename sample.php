@@ -1,8 +1,8 @@
 <?php
 
-require_once 'WeatherForest.php';
+require_once 'WeatherForecast.php';
 
-$wf   = new WeatherForest(237); // Porto Alegre, RS
+$wf   = new WeatherForecast(237); // Porto Alegre, RS
 $data = $wf->get();
 
 header('Content-type: application/json; charset=UTF-8');
