@@ -7,7 +7,7 @@
  * @icons:         http://tempo.cptec.inpe.br/~rtempo/legenda.shtml
  */
 
-class WeatherForest {
+class WeatherForecast {
 
 	private $_source = 'CPTEC/INPE';
 	private $_api    = 'http://servicos.cptec.inpe.br/XML/';
