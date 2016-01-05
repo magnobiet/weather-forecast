@@ -2,12 +2,125 @@
 
 > Dados da Previsão de Tempo e IUV
 
+## Exemplo
+
 ```bash
 git clone git@github.com:magnobiet/weather-forecast.git
 cd weather-forecast
 php -S localhost:8080
 x-www-browser http://localhost:8080/sample.php
 ```
+
+## Retorno do exemplo
+
+```json
+{
+	"source": "CPTEC\/INPE",
+	"city": "Porto Alegre",
+	"state": "RS",
+	"updated_at": "2016-01-05",
+	"forecast": [{
+		"day": "2016-01-05",
+		"iuv": 14,
+		"temperature": {
+			"high": 32,
+			"low": 22,
+			"average": 27
+		},
+		"weather": {
+			"abbreviation": "np",
+			"description": "Nublado e Pancadas de Chuva",
+			"text": "Muitas nuvens com curtos per\u00edodos de sol e pancadas de chuva com trovoadas.",
+			"icon": "http:\/\/img0.cptec.inpe.br\/~rgrafico\/icones_principais\/tempo\/icones\/np.png"
+		}
+	}, {
+		"day": "2016-01-06",
+		"iuv": 14,
+		"temperature": {
+			"high": 31,
+			"low": 22,
+			"average": 26.5
+		},
+		"weather": {
+			"abbreviation": "np",
+			"description": "Nublado e Pancadas de Chuva",
+			"text": "Muitas nuvens com curtos per\u00edodos de sol e pancadas de chuva com trovoadas.",
+			"icon": "http:\/\/img0.cptec.inpe.br\/~rgrafico\/icones_principais\/tempo\/icones\/np.png"
+		}
+	}, {
+		"day": "2016-01-07",
+		"iuv": 13,
+		"temperature": {
+			"high": 31,
+			"low": 22,
+			"average": 26.5
+		},
+		"weather": {
+			"abbreviation": "ci",
+			"description": "Chuvas Isoladas",
+			"text": "Muitas nuvens com curtos per\u00edodos de sol e chuvas em algumas \u00e1reas.",
+			"icon": "http:\/\/img0.cptec.inpe.br\/~rgrafico\/icones_principais\/tempo\/icones\/ci.png"
+		}
+	}, {
+		"day": "2016-01-08",
+		"iuv": 13,
+		"temperature": {
+			"high": 31,
+			"low": 22,
+			"average": 26.5
+		},
+		"weather": {
+			"abbreviation": "pn",
+			"description": "Parcialmente Nublado",
+			"text": "Sol entre poucas nuvens.",
+			"icon": "http:\/\/img0.cptec.inpe.br\/~rgrafico\/icones_principais\/tempo\/icones\/pn.png"
+		}
+	}, {
+		"day": "2016-01-09",
+		"iuv": 14,
+		"temperature": {
+			"high": 31,
+			"low": 23,
+			"average": 27
+		},
+		"weather": {
+			"abbreviation": "psc",
+			"description": "Possibilidade de Chuva",
+			"text": "Nebulosidade vari\u00e1vel com pequena chance (inferior a 30%) de chuva.",
+			"icon": "http:\/\/img0.cptec.inpe.br\/~rgrafico\/icones_principais\/tempo\/icones\/psc.png"
+		}
+	}, {
+		"day": "2016-01-10",
+		"iuv": 14,
+		"temperature": {
+			"high": 30,
+			"low": 22,
+			"average": 26
+		},
+		"weather": {
+			"abbreviation": "npp",
+			"description": "Nublado com Possibilidade de Chuva",
+			"text": "Muitas nuvens com curtos per\u00edodos de sol com pequena chance (inferior a 30%) de chuva a qualquer hora do dia.",
+			"icon": "http:\/\/img0.cptec.inpe.br\/~rgrafico\/icones_principais\/tempo\/icones\/npp.png"
+		}
+	}, {
+		"day": "2016-01-11",
+		"iuv": 14,
+		"temperature": {
+			"high": 31,
+			"low": 23,
+			"average": 27
+		},
+		"weather": {
+			"abbreviation": "pc",
+			"description": "Pancadas de Chuva",
+			"text": "Chuva de curta dura\u00e7\u00e3o e pode ser acompanhada de trovoadas a qualquer hora do dia.",
+			"icon": "http:\/\/img0.cptec.inpe.br\/~rgrafico\/icones_principais\/tempo\/icones\/pc.png"
+		}
+	}]
+}
+```
+
 ## Documentação
 http://servicos.cptec.inpe.br/XML/
 
