@@ -2,7 +2,7 @@
 
 require_once 'WeatherForecast.php';
 
-$wf   = new WeatherForecast(237); // Porto Alegre, RS
+$wf   = new WeatherForecast('Caçapava/SP');
 $data = $wf->get();
 
 header('Content-type: application/json; charset=UTF-8');

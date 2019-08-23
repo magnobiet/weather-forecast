@@ -8,7 +8,6 @@
  */
 
 class WeatherForecast {
-
 	private $_source = 'CPTEC/INPE';
 	private $_api    = 'http://servicos.cptec.inpe.br/XML/';
 	private $_city   = null;
@@ -176,6 +175,11 @@ class WeatherForecast {
 	);
 
 	public function __construct($city) {
+		$this->byID = json_decode(file_get_contents('byID.json'),true);
+		$this->byName = json_decode(file_get_contents('byName.json'),true);
+		if (isset($this->byName[$city])){
+			$city = $this->byName[$city];
+		}
 		$this->_city = $city;
 	}
 
