@@ -179,6 +179,8 @@ class WeatherForecast {
 		$this->byName = json_decode(file_get_contents('byName.json'),true);
 		if (isset($this->byName[$city])){
 			$city = $this->byName[$city];
+		}elseif(!isset($this->byID[$city])){
+			$city = $this->byName['São Paulo/SP'];
 		}
 		$this->_city = $city;
 	}
