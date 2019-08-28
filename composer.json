@@ -1,0 +1,20 @@
+{
+  "name": "magnobiet/weather-forecast",
+  "description": "Dados da previsão de tempo e IUV fornecidos pelo CPTEC/INPE",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Magno Biét",
+      "email": "magno.biet@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "MagnoBiet": "src/"
+    }
+  }
+}
