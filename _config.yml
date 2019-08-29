@@ -1,6 +1,5 @@
-title: Weather Forecast
-description: CPTEC/INPE
-google_analytics: 
+title: 🌤️ Previsão de Tempo
+description: Dados da previsão de tempo e IUV fornecidos pelo CPTEC/INPE
 show_downloads: true
 theme: jekyll-theme-cayman
 
