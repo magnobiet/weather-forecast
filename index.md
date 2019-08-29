@@ -1,7 +1,3 @@
-# 🌤️ Previsão de Tempo
-
-Dados da previsão de tempo e IUV fornecidos pelo CPTEC/INPE
-
 ## Exemplo
 
 ```bash
